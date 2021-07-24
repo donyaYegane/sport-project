@@ -1,0 +1,515 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+li,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.primary-text{
+    color: red  
+}
+/*header*/
+.header{
+    width: 100%;
+    margin-bottom: 15px;
+}
+    .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/*logo*/
+.logo{
+    font-size: 30px;
+    color: #333;
+    text-decoration: none;
+}
+/*menu*/
+.menu{
+    color: #333;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu>li:hover{
+ background-color: rgb(24, 141, 209);
+}
+/* icons*/
+.icons {
+    font-size: 15px;
+    margin-right: 40px;
+}
+.icons i{
+    margin:  3px ;
+}
+.menu>li>a{
+    color: #333;
+    padding: 5px;
+    border: 1px solid rgba(51, 51, 51, 0.287);
+}/*main*/
+.main{
+    width: 100%;
+}
+/*hero*/
+.hero{
+    width: 100%;
+    background: url(../images/pic6.jpg)no-repeat center top;
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*hero content*/
+.hero-content{
+    text-align: center;
+}
+.hero-content h1{
+    color: rgb(49, 46, 46);
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.hero-content p{
+    font-size: 20px;
+    color: rgb(27, 24, 24);
+    margin: 30px 0;
+    line-height: 26px;
+}
+.hero-content a{
+    background-color: rgba(27, 25, 25, 0.801);
+    color: #fff;
+    padding: 15px 30px;
+    display: inline-flex;
+}
+/*main*/
+/*boxes*/
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.box i {
+    font-size: 20px;
+    border:1px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    margin-left: 20px;
+    color: white;
+}
+/*left box*/
+.left-box{
+    height: 150px;
+    width: 33%;
+    padding: 30px 0;
+    background-color: tomato;
+}
+.left-box h2{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.left-box p{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+/*mid box*/
+.mid-box{
+    width: 33%;
+    height: 150px;
+    padding: 30px 0;
+    background-color: #333;
+}
+.mid-box h2{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    }
+    .mid-box p{
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 10px;
+    }/*right box*/
+.right-box{
+    width: 33%;
+    height: 150px;
+    padding: 30px 0;
+    background-color: black;
+}
+.right-box h2{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    }
+    .right-box p{
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    /*welcome*/
+    .welcome{
+        width: 100%;
+        background:linear-gradient(rgba(22, 21, 21, 0.8),rgba(37, 32, 32, 0.8)), url(../images/pic1.jpg) no-repeat center top;
+        background-size: cover;
+        padding:100px 0;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .welcome-text{
+        text-align: center;
+    }
+    .welcome-text h3{
+    color: rgb(231, 179, 179);
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+    .welcome-text p{
+    font-size: 20px;
+    color: rgb(146, 143, 143);
+    margin: 30px 0;
+    line-height: 26px;
+    }
+    .welcome-text a{
+    background-color: tomato;
+    color: #fff;
+    padding: 15px 30px;
+    display: inline-block;
+    }
+    /*classes*/
+    .classes{
+        width: 100%;
+        padding:100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .classes-text{
+        text-align: center;
+    }
+    .classes-text h4{
+    color: rgb(12, 12, 12);
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+    .classes-text p{
+    font-size: 20px;
+    color: rgb(32, 30, 30);
+    margin: 30px 0;
+    line-height: 26px;
+    }/*sports*/
+    .sports{
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .any-sport {
+        width: 32%;
+        height: 300PX;
+        margin: 3px;
+        filter: brightness(50%);
+        
+    }
+    .any-sport figcaption{
+        color: rgb(250, 250, 250);
+        font-size: 20px;
+        text-align: center;
+        padding:10px 0;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(0,-150px);
+        transition: 0.5s;
+        
+    }
+    .any-sport:hover figcaption{
+       color: rgba(19, 17, 17, 0.856);
+       font-size:30px;
+    }
+    .any-sport img{
+        width: 100%;
+        height: 300PX;
+        display: flex;
+        transition: 0.3s;
+    }
+    .any-sport:hover img {
+        transform: scale(1.2);
+    }
+    /*subscribe*/
+    .subscribe{
+        width: 100%;
+        padding:100px 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscribe-text{
+        text-align: center;
+    }
+    .subscribe-text h5{
+    color: rgb(12, 12, 12);
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    /*main manu*/
+    .main-menu{
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-menu>li>a{
+        color: #333;
+        padding: 7px 10px;
+        display: block;
+        border: 1px solid rgba(51, 51, 51, 0.287);
+        background-color: rgba(161, 154, 154, 0.801);
+        margin-right: 10px;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .main-menu>li> .sub,
+    .main-menu>li>a:hover{
+        color: #fff;
+        background-color: tomato;
+    } 
+    /* gym */
+.gym{
+    width: 100%;
+    min-height: 500px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.gym h2{
+    color: red;
+    font-size: 30px;
+}
+.gym i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+    font-size: 15px;
+}
+.enfold-gym{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+.gym1{
+    margin-right: 20px;
+}
+    /*plan*/
+    .plan{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }/*primary*/
+    .primary{
+        color: rgba(26, 22, 22, 0.733);
+        font-size: 40px;
+    }/*price*/
+    .price{
+        width: 33%;
+        height: 200px;
+        padding: 30px 0;
+        background-color: #fff;
+    }
+    .price p{
+        color: rgb(12, 11, 11);
+        text-align: center;
+        font-size: 20px;
+    }/*time*/
+    .time{
+        width: 33%;
+        height: 200px;
+        font-size: 25px;
+        padding: 30px 0;
+        text-align: center;
+        background: rgb(82, 75, 75);
+    }
+    /*number*/
+    .number{
+        width: 33%;
+        height: 200px;
+        padding: 30px 0;
+        background-color: rgb(109, 97, 97);
+        float: left;
+    }
+    .number p{
+            color: white;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 20px;
+        }/*last part*/
+        .last-part{
+            width: 100%;
+            
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(34, 29, 29);
+        }
+        .part {
+            width: 32%;
+            margin-bottom: 5%;
+        }
+        .part h6{
+            text-transform: uppercase;
+            font-size: 10px;
+            border: 1px solid gray;
+            border-left:none;
+            border-right: none;
+            color: grey;
+            margin-top: 4%;
+        }
+        .part p{
+            font-size: 10px;
+            color: gray;
+            text-align: left;
+        }
+        .part2{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        
+        /*footer*/
+        .footer{
+            width: 100%;
+            padding: 10px;
+            background-color: #181616;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .footer p{
+            font-size: 15px;
+            color: #fff;
+            padding: 10px 0;
+            text-decoration: none;
+        }
+        .footer-menu{
+            color: #fff;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .footer-menu>li>a{
+            color: #fff;
+            padding: 10px 10px;
+            
+        }
+        /*responsive*/
+        @media(max-width:768px){
+            /*nav*/
+          .nav{
+              padding: 20px;
+          }
+        }
+        @media(max-width:665px){
+            /*nav*/
+            .nav{
+            flex-wrap: wrap;
+        }/*menu*/
+            .menu{ margin-top: 15px;}
+            /*icons*/
+            .icons{margin-top: 15px;}
+            /*box*/
+             .box{
+                 flex-wrap: wrap;
+             }
+               
+            .left-box,.mid-box,.right-box{
+                width: 100%;
+            }
+            /*sport*/
+            .any-sport{
+                width: 40%;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-right: 5%;
+                margin-top: 5px;
+            }
+            /*planes*/
+            .plan{
+                flex-wrap: wrap;
+            }
+            .price,.time,.number{
+                
+                width: 100%;
+            }
+            /*last part*/
+            .last-part{
+                flex-wrap: wrap;
+            }
+            .part{
+                width: 100%;
+                padding: 15px;
+            }
+            .enfold-gym{
+                flex-wrap: wrap;
+            }
+    }
+        @media(max-width:395px){
+            /*menu*/
+             .menu{
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+            }
+            .menu li{
+                width: 32%;
+                padding: 5px;
+                margin-top: 15px;
+            }
+            /*sports*/
+            .any-sport{
+                width: 100%;
+                
+            }
+            
+        }
